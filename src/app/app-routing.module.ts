@@ -7,7 +7,7 @@ import { ProductBoxComponent } from './component/product-box/product-box.compone
 const routes: Routes = [
 
   { 
-    path: '', 
+    path: 'login', 
     component: LoginComponent 
   },
   { 

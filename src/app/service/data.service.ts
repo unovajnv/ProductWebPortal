@@ -17,4 +17,8 @@ export class DataService {
   getProducts(): any {
     return this.http.get(`${this.apiUrl}/products`);
   }
+
+  getUsers(): any {
+    return this.http.get<any>(`${this.apiUrl}/users`);
+  }
 }
