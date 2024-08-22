@@ -18,10 +18,12 @@ export class LoginComponent implements OnInit {
       this.allUsers = data;
       if(this.allUsers.some(user => user.email === this.email && user.password === this.password)){
         console.log("Login Successful");
-        //Navigate to home page or dashboard page
+        //Navigate to  or dashboard page
         this.router.navigate(['/dashboard']);
       }else{
         console.log("Invalid Credentials");
+        //Navigate to login page
+        this.router.navigate(['/login']);
       }
     });
    }

@@ -3,15 +3,8 @@
     <div class="headName">Products</div>
     <div class="inputdiv">
         <mat-form-field>
-            <input matInput placeholder="Search...">
+            <input matInput placeholder="Search..." (input)="onSearch($event)">
         </mat-form-field>
-    </div>
-    <div class="optiondiv">
-        <select name="" id="" class="selectoption">
-            <option value="price">Price</option>
-            <option value="rating">Rating</option>
-            <option value="deliveryDays">Delivery Days</option>
-        </select>
     </div>
 </mat-toolbar>
 <div>

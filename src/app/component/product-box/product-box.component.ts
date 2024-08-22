@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/service/data.service';
+import { SharedService } from 'src/app/service/datashare/shared.service';
+import { SearchPipe } from 'src/app/pipe/search.pipe';
 @Component({
   selector: 'app-product-box',
   templateUrl: './product-box.component.html',
@@ -9,14 +11,40 @@ export class ProductBoxComponent implements OnInit {
 
   users: any[] = [];
   products: any[] = [];
-  constructor(private dataService:DataService) { }
+  constructor(private dataService:DataService, private sharedData: SharedService) { }
 
+  isExpanded = false;
+
+  searchText: string = '';
+  
+  sortRating(){
+
+  }
+  sortDelivery()
+  {
+    
+  }
+
+
+  toggleExpand() {
+    this.isExpanded = !this.isExpanded;
+  }
   ngOnInit(): void {
       this.dataService.getProducts().subscribe((data:any) => {
        this.products = data;
-       console.log(this.products);
+       //console.log(this.products);
      });
+
+     this.sharedData.currentData.subscribe(data => {
+      this.searchText = data;
+      console.log(this.searchText)
+    });
   }
+
+  sortPrice(){
+    this.products.sort((a, b) => a.price - b.price);
+  }
+  
 }
 
 

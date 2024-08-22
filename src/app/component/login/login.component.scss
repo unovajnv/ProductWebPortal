@@ -34,18 +34,9 @@ mat-card-header{
   .example-header-image {
     background-size: cover;
   }
-  mat-card-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-  }
+
   input{
     margin-top: 10px;
-  }
-  .inputdiv{
-    margin:5px;
   }
   ::ng-deep .mat-form-field-appearance-outline .mat-form-field-flex {
     padding: 0 .75em 0 .75em;
@@ -70,4 +61,9 @@ button{
     border-radius: 10px;
     box-shadow: 0.5px 0.5px 1px 1px rgb(196, 195, 195);
     cursor: pointer;
+}
+mat-card-actions{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
