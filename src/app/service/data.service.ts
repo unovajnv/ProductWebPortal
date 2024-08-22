@@ -11,7 +11,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   postUserDetails(data:any): any {
-    this.http.post(`${this.apiUrl}/users`,data);
+    return this.http.post(`${this.apiUrl}/users`,data);
   }
 
   getProducts(): any {

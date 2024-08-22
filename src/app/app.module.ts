@@ -16,6 +16,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { ProductBoxComponent } from './component/product-box/product-box.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchPipe } from './pipe/search.pipe';
+import { FormsModule } from '@angular/forms';
+import { DataService } from './service/data.service';
 
 @NgModule({
   declarations: [
@@ -37,9 +39,11 @@ import { SearchPipe } from './pipe/search.pipe';
     MatIconModule,
     MatButtonModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    
   ],
-  providers: [],
+  providers: [ DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,20 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import {ChangeDetectionStrategy} from '@angular/core';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
+import { DataService } from 'src/app/service/data.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
-  // standalone: true,
-  // imports: [MatFormFieldModule, MatInputModule, MatIconModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RegisterComponent implements OnInit {
+ data:any ={
+  name:'',
+  mbNumber:'',
+  email:'',
+  password:'',
+ }
+  constructor(private DataService:DataService) { }
+ 
 
-  constructor() { }
-
+  registerUser():void{
+        console.log(this.data)
+        this.DataService.postUserDetails(this.data).subscribe({
+          next: (data:any) => {
+            console.log(data);
+          },
+          error: (error:any) => {
+            console.error('Error:', error);
+          }
+        });
+      }
   ngOnInit(): void {
   }
 
