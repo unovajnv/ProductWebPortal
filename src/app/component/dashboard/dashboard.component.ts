@@ -11,5 +11,4 @@ export class DashboardComponent implements OnInit {
   searchText:string="";
   ngOnInit(): void {
   }
-
 }

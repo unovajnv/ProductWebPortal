@@ -1,0 +1,32 @@
+.outerdiv{
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    margin-left:  40px;
+    margin-right:  40px;
+}
+.example-card {
+    // min-width: 20%;
+   
+    border: 1px solid black;
+    margin: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: 1px 1px 2px 2px rgb(202, 202, 203);
+    border-radius: 10px;
+    padding-bottom: 40px;
+    width: 300px; 
+    height: auto;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+
+  }
+  mat-card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }

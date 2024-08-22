@@ -13,13 +13,18 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
+import { ProductBoxComponent } from './component/product-box/product-box.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SearchPipe } from './pipe/search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProductBoxComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

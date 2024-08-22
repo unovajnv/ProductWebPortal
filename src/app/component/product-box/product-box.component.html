@@ -1,0 +1,15 @@
+
+<div class="outerdiv" >
+    <mat-card class="example-card" appearance="outlined" *ngFor="let p of products">
+        <mat-card-content>
+         <div>
+            <p>Name: {{p.name}}</p>
+            <p>Description: {{p.description}}</p>
+            <p>Rating: {{p.rating}}</p>
+            <p>Delivery Days: {{p.delivery_days}}</p>
+            <p>Reviews: {{p.reviews}}</p>
+            <input type="text" name="" id="" placeholder="review" style="display: none;">
+         </div>
+        </mat-card-content>
+    </mat-card>
+    </div>

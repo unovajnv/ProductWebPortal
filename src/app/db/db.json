@@ -1,0 +1,60 @@
+{
+    "users": [
+        {
+            "name": "Alice Johnson",
+            "mob": "123-456-7890",
+            "email": "alice.johnson@example.com",
+            "password": "password123"
+        },
+        {
+            "name": "Bob Smith",
+            "mob": "987-654-3210",
+            "email": "bob.smith@example.com",
+            "password": "securepassword"
+        },
+        {
+            "name": "Charlie Brown",
+            "mob": "555-555-5555",
+            "email": "charlie.brown@example.com",
+            "password": "charlie123"
+        }
+    ],
+    "products": [
+        {
+            "name": "Wireless Mouse",
+            "description": "A high-precision wireless mouse with ergonomic design.",
+            "rating": 4.5,
+            "price": 25.99,
+            "delivery_days": 3,
+            "reviews": [
+                "Great mouse, very comfortable!",
+                "Battery life is excellent.",
+                "Works well with my laptop."
+            ]
+        },
+        {
+            "name": "Mechanical Keyboard",
+            "description": "A durable mechanical keyboard with customizable RGB lighting.",
+            "rating": 4.8,
+            "price": 79.99,
+            "delivery_days": 5,
+            "reviews": [
+                "Best keyboard I've ever used.",
+                "The keys are very responsive.",
+                "Love the RGB lighting options."
+            ]
+        },
+        {
+            "name": "Noise Cancelling Headphones",
+            "description": "Over-ear headphones with active noise cancellation and superior sound quality.",
+            "rating": 4.7,
+            "price": 199.99,
+            "delivery_days": 7,
+            "reviews": [
+                "Amazing sound quality and noise cancellation.",
+                "Very comfortable for long use.",
+                "A bit pricey, but worth it."
+            ]
+        }
+    ]
+}
