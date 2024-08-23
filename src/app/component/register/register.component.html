@@ -5,24 +5,24 @@
       <h3>Enter Details to register</h3>
     </mat-card-header>
     <mat-card-content class="inputdiv">
-        <div>
+        <div class="inputBox">
           <p style="display: flex; justify-content: space-between;">Name :
-              <input matInput placeholder="Name" [(ngModel)]="data.name" placeholder="Name" >
+              <input matInput placeholder="Name" type="text" [(ngModel)]="data.name" placeholder="Name" >
             </p>
         </div>
           <div>
             <p style="display: flex; justify-content: space-between;">Mobile Number:
-              <input matInput placeholder="Mobile Number" [(ngModel)]="data.mbNumber" placeholder="Mobile Number">
+              <input matInput placeholder="Mobile Number" type="text" [(ngModel)]="data.mbNumber" placeholder="Mobile Number">
             </p>
         </div>
           <div>
             <p style="display: flex; justify-content: space-between;">Email:
-              <input matInput placeholder="Email" [(ngModel)]="data.email" placeholder="Email">
+              <input matInput placeholder="Email" type="email" [(ngModel)]="data.email" placeholder="Email">
             </p>
         </div>
         <div >
           <p style="display: flex; justify-content: space-between;">Password:
-              <input matInput placeholder="Password" [(ngModel)]="data.password" placeholder="Password">
+              <input matInput placeholder="Password" type="password" [(ngModel)]="data.password" placeholder="Password">
             </p>
         </div>
     </mat-card-content>

@@ -22,9 +22,6 @@
       "id": "fc01"
     },
     {
-      "id": "a908"
-    },
-    {
       "id": "6f02",
       "name": "Bob Smith",
       "mob": "987-654-3210",
@@ -39,32 +36,25 @@
       "password": "securepassword"
     },
     {
-      "id": "6c59",
-      "name": "",
-      "mbNumber": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "e0c2",
-      "name": "",
-      "mbNumber": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "3a55",
-      "name": "",
-      "mbNumber": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "e4be",
+      "id": "afca",
       "name": "Umesh",
-      "mbNumber": "12345678",
-      "email": "h2",
-      "password": "12345"
+      "mbNumber": "123456",
+      "email": "hello@gmail.com",
+      "password": "umesh123"
+    },
+    {
+      "id": "3ad0",
+      "name": "Umesh",
+      "mbNumber": "123456",
+      "email": "hello@gmail.com",
+      "password": "umesh123"
+    },
+    {
+      "id": "fd71",
+      "name": "werwer",
+      "mbNumber": "wert",
+      "email": "wert@gmail.com",
+      "password": "werty"
     }
   ],
   "products": [
