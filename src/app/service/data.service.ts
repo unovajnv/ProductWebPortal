@@ -21,4 +21,8 @@ export class DataService {
   getUsers(): any {
     return this.http.get<any>(`${this.apiUrl}/users`);
   }
+  postReview(data:any,id:any): any {
+    console.log(data);
+    return this.http.patch(`${this.apiUrl}/products/${id}`,data);
+  }
 }

@@ -59,16 +59,16 @@ button{
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0.5px 0.5px 1px 1px rgb(196, 195, 195);
+    box-shadow: 0.5px 0.5px 1px 1px rgb(121, 119, 119);
     cursor: pointer;
 }
 
 input.ng-invalid.ng-touched {
-    border-color: red;
+    border-color: rgb(217, 112, 112);
   }
   
   input.ng-valid.ng-touched {
-    border-color: green;
+    border-color: rgb(87, 175, 87);
   }
 input{
     padding: 5px;

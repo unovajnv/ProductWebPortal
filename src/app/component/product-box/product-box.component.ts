@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/service/data.service';
 import { SharedService } from 'src/app/service/datashare/shared.service';
-import { SearchPipe } from 'src/app/pipe/search.pipe';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from '../dialog/dialog.component';
 @Component({
   selector: 'app-product-box',
   templateUrl: './product-box.component.html',
@@ -11,7 +12,8 @@ export class ProductBoxComponent implements OnInit {
 
   users: any[] = [];
   products: any[] = [];
-  constructor(private dataService:DataService, private sharedData: SharedService) { }
+  constructor(private dataService:DataService, private sharedData: SharedService, private dialog: MatDialog) { }
+
 
   isExpanded = false;
 
@@ -37,10 +39,15 @@ export class ProductBoxComponent implements OnInit {
 
      this.sharedData.currentData.subscribe(data => {
       this.searchText = data;
-      console.log(this.searchText)
+      //console.log(this.searchText)
     });
   }
 
+  openDialog(content: string): void {
+    this.dialog.open(DialogComponent, {
+      data: content 
+    });
+  }
   sortPrice(){
     this.products.sort((a, b) => a.price - b.price);
   }

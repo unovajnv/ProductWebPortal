@@ -18,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SearchPipe } from './pipe/search.pipe';
 import { FormsModule } from '@angular/forms';
 import { DataService } from './service/data.service';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogComponent } from './component/dialog/dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,9 @@ import { DataService } from './service/data.service';
     RegisterComponent,
     DashboardComponent,
     ProductBoxComponent,
-    SearchPipe
+    SearchPipe,
+    DialogComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import { DataService } from './service/data.service';
     MatSelectModule,
     HttpClientModule,
     FormsModule,
+    MatDialogModule
     
   ],
   providers: [ DataService],
